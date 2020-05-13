@@ -8,6 +8,13 @@
 <body>
     <h3>{{request.session.counter}}</h3>
     
-    <button type="submit" value="Submit">{{request.session.randword}}</button>
+    
+    <form action='/random_word' method='post'>
+        {% csrf_token %}
+        <button type='submit'>
+        {{request.session.randword}}
+        </button>
+    </form>
+    
 </body>
 </html>
