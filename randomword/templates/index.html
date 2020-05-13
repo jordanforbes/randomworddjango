@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>{{counter}}</h3>
-    <h1>{{randword}}</h1>
+    <h3>{{request.session.counter}}</h3>
+    
+    <button type="submit" value="Submit">{{request.session.randword}}</button>
 </body>
 </html>
